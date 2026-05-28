@@ -421,17 +421,111 @@ h1,h2,h3{
     transform: translateY(-4px) scale(1.1);
 }
 
-@media(max-width: 768px){
+/* Mobile Responsive Design */
+@media (max-width: 768px){
+
+    .nav{
+        padding: 14px 20px;
+        position: sticky;
+    }
+
+    .logo{
+        max-width: 120px;
+        height: auto;
+    }
+
+    .nav-toggle{
+        display: block;
+        color: #111827;
+        z-index: 100;
+    }
+
+    .nav-menu{
+        position: absolute;
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+        background: rgba(252, 134, 84, 0.98);
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 22px;
+        padding: 25px 0;
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .nav-menu.active{
+        display: flex;
+    }
+
+    .nav-menu a{
+        font-size: 1rem;
+        color: #111827;
+    }
+
+    .hero{
+        min-height: auto;
+        padding: 90px 18px;
+    }
+
+    .hero h1{
+        font-size: 2.6rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .hero-stats{
+        grid-template-columns: 1fr;
+    }
+
+    .about-section{
+        grid-template-columns: 1fr;
+        padding: 35px 20px;
+        margin: 25px 16px;
+        text-align: center;
+    }
+
+    .about-text h2{
+        font-size: 2rem;
+    }
+
+    .impact-grid{
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+    .impact-card{
+        padding: 24px 18px;
+    }
+
     .volunteer-layout{
         grid-template-columns: 1fr;
     }
 
     .volunteer-section{
-        margin-top: 20px;
-        border-radius: 20px;
+        margin: 25px 16px;
+        padding: 35px 20px;
+        border-radius: 22px;
     }
+
+    .calendar-box iframe{
+        height: 350px;
+    }
+
     .footer-content{
         flex-direction: column;
         text-align: center;
+        gap: 16px;
+    }
+
+    .socials{
+        justify-content: center;
     }
 }
