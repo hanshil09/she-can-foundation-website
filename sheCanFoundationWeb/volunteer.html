@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Volunteer | She Can Foundation</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="nav">
+    <img src="src/assets/logoFoundation.jpg" alt="She Can Foundation Logo" class="logo" />
+
+    <button class="nav-toggle">☰</button>
+
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section volunteer-section">
+
+      <div class="volunteer-text">
+        <span class="tagline">Volunteer With Us</span>
+
+        <h1>Register for an Upcoming Event</h1>
+
+        <p>
+          Choose an upcoming event from the calendar and fill out the form
+          to volunteer with She Can Foundation.
+        </p>
+      </div>
+
+      <div class="volunteer-layout">
+
+        <div class="calendar-box">
+          <h2>Upcoming Events</h2>
+
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=en.indian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKolkata"
+            style="border:0"
+            width="100%"
+            height="420"
+            frameborder="0"
+            scrolling="no">
+          </iframe>
+        </div>
+
+        <form 
+          action="https://formsubmit.co/hanshilsolanki23@gmail.com"
+          method="POST"
+          class="form"
+        >
+
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_subject" value="New Volunteer Registration - She Can Foundation">
+
+          <label>
+            <span>Full Name</span>
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+
+          <label>
+            <span>Select Event</span>
+            <select name="event" required>
+              <option value="">Choose an event</option>
+              <option>Menstrual Hygiene Drive</option>
+              <option>Women Empowerment Webinar</option>
+              <option>Volunteer Training Session</option>
+              <option>Education Support Drive</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Your Skills</span>
+            <select name="skills" required>
+              <option value="">How can you help?</option>
+              <option>Teaching / Mentoring</option>
+              <option>Social Media</option>
+              <option>Event Management</option>
+              <option>Web / Tech Support</option>
+              <option>General Volunteering</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Why do you want to volunteer?</span>
+            <textarea name="message" rows="4" placeholder="Write your message..." required></textarea>
+          </label>
+
+          <button class="btn primary" type="submit">
+            Register as Volunteer
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2026 She Can Foundation — Registered under Indian Society Act, 1860</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/shecanfoundation/" target="_blank" rel="noopener noreferrer" >
+        <img src="./src/assets/instagram.png" alt="Instagram" class="social-icon"/></a>
+      <a href="https://www.linkedin.com/company/she-can-foundation/" target="_blank" rel="noopener noreferrer">
+        <img src="./src/assets/LinkedIn.svg" alt="LinkedIn" class="social-icon"/></a>
+    </div>
+  </div>
+</footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
